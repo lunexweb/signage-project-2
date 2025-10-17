@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Target, Eye, Award, Users } from "lucide-react";
+import { Target, Eye, Award, Users, Phone } from "lucide-react";
 import Layout from "@/components/Layout";
 import teamImage from "@/assets/team-working.jpg";
 
@@ -9,54 +9,60 @@ const About = () => {
       icon: Target,
       title: "Our Mission",
       description:
-        "To make clean, renewable energy accessible and affordable for every home and business in South Africa.",
+        "To provide professional signage solutions that enhance business visibility and brand presence across South Africa.",
     },
     {
       icon: Eye,
       title: "Our Vision",
       description:
-        "A sustainable future where solar energy powers communities, reduces carbon footprint, and creates energy independence.",
+        "To be the leading signage company in South Africa, known for quality, professionalism, and council compliance.",
     },
     {
       icon: Award,
       title: "Quality First",
       description:
-        "We use only premium equipment and maintain the highest installation standards, backed by comprehensive warranties.",
+        "We use only premium materials and maintain the highest installation standards, backed by our 17 years of experience.",
     },
     {
       icon: Users,
       title: "Customer Focus",
       description:
-        "Your satisfaction is our priority. We provide personalized solutions and ongoing support throughout your solar journey.",
+        "Your satisfaction is our priority. We provide personalized signage solutions and ongoing support throughout your project.",
     },
   ];
 
   const stats = [
-    { number: "500+", label: "Installations" },
-    { number: "15+", label: "Years Experience" },
+    { number: "1000+", label: "Signage Projects" },
+    { number: "17", label: "Years Experience" },
     { number: "98%", label: "Customer Satisfaction" },
-    { number: "20MW", label: "Energy Generated" },
+    { number: "100%", label: "Council Compliance" },
   ];
 
   return (
     <Layout>
       {/* Hero Section */}
       <section 
-        className="py-20 text-white relative"
+        className="py-20 text-white relative overflow-x-hidden"
         style={{
-          backgroundImage: `url(/assets/person-3062271_1280.jpg)`,
+          backgroundImage: `url(https://res.cloudinary.com/doqsolr8d/image/upload/v1760712951/Screenshot_2025-10-17_164332_kfxbsh.png)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 relative z-10 max-w-full overflow-x-hidden">
           <div className="max-w-3xl mx-auto text-center px-2">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">About SOLARQUENCH</h1>
-            <p className="text-lg sm:text-xl opacity-90">
-              Leading solar energy solutions provider, committed to transforming South Africa's energy landscape with sustainable, reliable power.
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">About Great Signs</h1>
+            <p className="text-lg sm:text-xl opacity-90 mb-6">
+              Professional signage company with 17 years experience, committed to delivering quality signage solutions across South Africa.
             </p>
+            <div className="flex items-center justify-center gap-2 text-white/90">
+              <Phone className="h-5 w-5" />
+              <a href="tel:+27725679274" className="text-lg font-semibold hover:text-red-400 transition-colors">
+                +27 72 567 9274
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -85,7 +91,7 @@ const About = () => {
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src={teamImage}
-                  alt="SOLARQUENCH team"
+                  alt="Great Signs team"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -94,13 +100,13 @@ const About = () => {
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Our Story</h2>
               <div className="space-y-4 text-base sm:text-lg text-muted-foreground">
                 <p>
-                  Founded with a vision to bring sustainable energy solutions to South Africa, SOLARQUENCH has grown from a small startup to a trusted name in the solar industry.
+                  Founded 17 years ago with a vision to provide professional signage solutions, Great Signs has grown from a small startup to a trusted name in the signage industry.
                 </p>
                 <p>
-                  Our team of certified professionals brings decades of combined experience in renewable energy, engineering, and customer service. We're passionate about helping our clients achieve energy independence while contributing to a cleaner environment.
+                  Our team of qualified professionals brings decades of combined experience in signage design, council applications, and installation. We're passionate about helping our clients achieve maximum visibility and brand presence through professional signage solutions.
                 </p>
                 <p>
-                  Every installation we complete is a step toward a more sustainable future. We take pride in delivering quality workmanship, using premium materials, and providing exceptional ongoing support to all our customers.
+                  Every signage project we complete enhances our client's business visibility. We take pride in delivering quality workmanship, using premium materials, and providing exceptional ongoing support to all our customers.
                 </p>
               </div>
             </div>
@@ -145,20 +151,20 @@ const About = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Expert Team</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12">
-            Our certified professionals bring expertise in solar technology, electrical engineering, and project management to ensure your installation is completed to the highest standards.
+            Our qualified professionals bring expertise in signage design, council applications, and installation to ensure your project is completed to the highest standards.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-primary">Certified</div>
-              <div className="text-muted-foreground">Installation Experts</div>
+              <div className="text-4xl font-bold text-primary">Qualified</div>
+              <div className="text-muted-foreground">Architect for Council Applications</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-primary">Licensed</div>
-              <div className="text-muted-foreground">Electrical Engineers</div>
+              <div className="text-4xl font-bold text-primary">Experienced</div>
+              <div className="text-muted-foreground">Signage Workers</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-primary">Trained</div>
-              <div className="text-muted-foreground">Support Staff</div>
+              <div className="text-4xl font-bold text-primary">Professional</div>
+              <div className="text-muted-foreground">Installation Riggers</div>
             </div>
           </div>
         </div>

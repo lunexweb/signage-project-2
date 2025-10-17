@@ -8,19 +8,19 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      content: "+27 78 635 9549",
-      link: "tel:+27786359549",
+      content: "+27 72 567 9274",
+      link: "tel:+27725679274",
     },
     {
       icon: Mail,
       title: "Email",
-      content: "info@SOLARQUENCH.co.za",
-      link: "mailto:info@SOLARQUENCH.co.za",
+      content: "info@greatsigns.co.za",
+      link: "mailto:info@greatsigns.co.za",
     },
     {
       icon: MapPin,
       title: "Location",
-      content: "Serving all of South Africa",
+      content: "63 Umbilo Rd, Durban",
       link: null,
     },
     {
@@ -32,27 +32,27 @@ const Contact = () => {
   ];
 
   const whatsappMessage = encodeURIComponent(
-    "Hi! I'm interested in learning more about your solar energy solutions."
+    "Hi! I'm interested in your professional signage solutions. Can you help me choose the right package for my business?"
   );
-  const whatsappNumber = "27786359549"; // +27 78 635 9549
+  const whatsappNumber = "27725679274"; // +27 72 567 9274
 
   return (
     <Layout>
       {/* Hero Section */}
       <section 
-        className="py-20 text-white relative"
+        className="py-20 text-white relative overflow-x-hidden"
         style={{
-          backgroundImage: `url(/assets/pexels-pixabay-269077.jpg)`,
+          backgroundImage: `url(https://res.cloudinary.com/doqsolr8d/image/upload/v1760712446/Screenshot_2025-10-17_164245_bwekdv.png)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
-        <div className="container mx-auto px-4 text-center relative z-10">
+        <div className="container mx-auto px-4 text-center relative z-10 max-w-full overflow-x-hidden">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Contact Us</h1>
           <p className="text-lg sm:text-xl max-w-3xl mx-auto opacity-90 px-2">
-            Get in touch with our solar energy experts. We're here to help you start your journey to clean, renewable power.
+            Get in touch with our signage experts. We're here to help you with professional signage solutions for your business.
           </p>
         </div>
       </section>
@@ -97,7 +97,7 @@ const Contact = () => {
               <div>
                 <h2 className="text-3xl sm:text-4xl font-bold mb-6">Let's Connect</h2>
                 <p className="text-lg sm:text-xl text-muted-foreground mb-8">
-                  Ready to start your solar journey? Reach out to us through any of these channels, and we'll get back to you promptly.
+                  Ready to start your signage project? Reach out to us through any of these channels, and we'll get back to you promptly.
                 </p>
               </div>
 
@@ -178,13 +178,13 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-lg mb-2">Coverage</h4>
                     <p className="text-muted-foreground">
-                      We provide solar installation services across South Africa, including:
+                      We provide signage services across South Africa, including:
                     </p>
                     <ul className="mt-3 space-y-2 text-muted-foreground">
-                      <li>• Gauteng (Johannesburg, Pretoria, Sandton)</li>
-                      <li>• Western Cape (Cape Town, Stellenbosch)</li>
-                      <li>• KwaZulu-Natal (Durban, Pietermaritzburg)</li>
-                      <li>• Eastern Cape (Port Elizabeth, East London)</li>
+                      <li>• Custom Signage Design</li>
+                      <li>• Council Applications</li>
+                      <li>• Professional Installation</li>
+                      <li>• Nationwide Service</li>
                       <li>• And more...</li>
                     </ul>
                   </div>
@@ -210,13 +210,13 @@ const Contact = () => {
                   <div className="bg-gradient-to-br from-primary to-accent p-6 rounded-lg text-white">
                     <h4 className="font-semibold text-lg mb-2">Emergency Support</h4>
                     <p className="opacity-90 mb-3">
-                      For urgent technical issues with your existing installation:
+                      For urgent signage issues or support:
                     </p>
                     <a
-                      href="tel:+27123456789"
+                      href="tel:+27725679274"
                       className="font-bold text-xl hover:underline"
                     >
-                      +27 123 456 789
+                      +27 72 567 9274
                     </a>
                   </div>
                 </div>
@@ -238,25 +238,25 @@ const Contact = () => {
           <div className="max-w-3xl mx-auto space-y-4">
             <Card className="shadow-lg border-none">
               <CardContent className="p-6">
-                <h3 className="font-semibold text-lg mb-2">How long does installation take?</h3>
+                <h3 className="font-semibold text-lg mb-2">How long does signage installation take?</h3>
                 <p className="text-muted-foreground">
-                  Most residential installations are completed in 1-3 days, depending on system size.
+                  Most signage projects are completed in 1-3 days, depending on complexity and size.
                 </p>
               </CardContent>
             </Card>
             <Card className="shadow-lg border-none">
               <CardContent className="p-6">
-                <h3 className="font-semibold text-lg mb-2">Do you offer financing?</h3>
+                <h3 className="font-semibold text-lg mb-2">Do you handle council applications?</h3>
                 <p className="text-muted-foreground">
-                  Yes, we work with several financing partners to make solar accessible for everyone.
+                  Yes, our qualified architect handles all council applications and drawings for seamless approval.
                 </p>
               </CardContent>
             </Card>
             <Card className="shadow-lg border-none">
               <CardContent className="p-6">
-                <h3 className="font-semibold text-lg mb-2">What warranty do you provide?</h3>
+                <h3 className="font-semibold text-lg mb-2">What services do you provide?</h3>
                 <p className="text-muted-foreground">
-                  We offer comprehensive warranties: 25 years on panels, 10 years on inverters, and 10 years on batteries.
+                  We provide custom signage design, council applications, professional installation, and nationwide service with 17 years of experience.
                 </p>
               </CardContent>
             </Card>

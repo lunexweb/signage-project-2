@@ -1,63 +1,63 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Battery, Home, Building2, Zap } from "lucide-react";
+import { CheckCircle, Signpost, Building2, MapPin, Zap, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 
 const Products = () => {
   const packages = [
     {
-      name: "Residential Starter",
-      icon: Home,
-      price: "From R45,000",
-      savings: "Save up to R1,500/month",
+      name: "Business Signage",
+      icon: Signpost,
+      price: "From R2,500",
+      savings: "Professional design included",
       features: [
-        "3kW Solar Panel System",
-        "8 Premium Solar Panels",
-        "3kW Hybrid Inverter",
-        "5kWh Lithium Battery",
-        "Professional Installation",
-        "10 Year Warranty",
-        "Monitoring System",
-        "Post-Installation Support",
+        "Custom signage design",
+        "High-quality materials",
+        "Professional installation",
+        "Council application assistance",
+        "2-year warranty",
+        "Free design consultation",
+        "Quick turnaround",
+        "Local installation team",
       ],
       popular: false,
     },
     {
-      name: "Home Complete",
-      icon: Battery,
-      price: "From R85,000",
-      savings: "Save up to R3,000/month",
+      name: "Complete Signage Package",
+      icon: Award,
+      price: "From R8,500",
+      savings: "Save up to R2,000",
       features: [
-        "5kW Solar Panel System",
-        "14 Premium Solar Panels",
-        "5kW Hybrid Inverter",
-        "10kWh Lithium Battery",
-        "Professional Installation",
-        "15 Year Warranty",
-        "Advanced Monitoring",
-        "Priority Support",
-        "Free Annual Maintenance",
+        "Custom signage design",
+        "Premium materials & finishes",
+        "Professional installation",
+        "Council applications handled",
+        "5-year warranty",
+        "Priority support",
+        "Free maintenance for 1 year",
+        "Nationwide installation",
+        "Design revisions included",
       ],
       popular: true,
     },
     {
-      name: "Commercial Pro",
+      name: "Commercial Signage Pro",
       icon: Building2,
-      price: "From R250,000",
-      savings: "Save up to R10,000/month",
+      price: "From R15,000",
+      savings: "Enterprise pricing available",
       features: [
-        "15kW+ Solar Panel System",
-        "Custom Panel Configuration",
-        "Commercial Grade Inverter",
-        "30kWh+ Battery Storage",
-        "Professional Installation",
-        "20 Year Warranty",
-        "Real-time Monitoring",
-        "24/7 Priority Support",
-        "Quarterly Maintenance",
-        "Performance Guarantee",
+        "Large format signage",
+        "Custom architectural design",
+        "Professional installation",
+        "Full council compliance",
+        "10-year warranty",
+        "24/7 support",
+        "Quarterly maintenance",
+        "Performance guarantee",
+        "Multiple location support",
+        "Brand consistency package",
       ],
       popular: false,
     },
@@ -65,21 +65,21 @@ const Products = () => {
 
   const promotions = [
     {
-      title: "Summer Special",
-      discount: "15% OFF",
-      description: "Get 15% off all residential packages. Limited time offer!",
-      validUntil: "Valid until end of December 2025",
+      title: "New Business Special",
+      discount: "20% OFF",
+      description: "Get 20% off your first signage project. Perfect for new businesses!",
+      validUntil: "Valid until end of March 2025",
     },
     {
-      title: "Battery Upgrade",
-      discount: "R8,000",
-      description: "Upgrade to double battery capacity for just R8,000 extra",
-      validUntil: "Available on Home Complete package",
+      title: "Council Application",
+      discount: "FREE",
+      description: "Free council application handling on Complete Package and above",
+      validUntil: "Available on all premium packages",
     },
     {
       title: "Referral Bonus",
-      discount: "R5,000",
-      description: "Refer a friend and both receive R5,000 credit",
+      discount: "R1,000",
+      description: "Refer a business and both receive R1,000 credit",
       validUntil: "Ongoing promotion",
     },
   ];
@@ -88,7 +88,7 @@ const Products = () => {
     <Layout>
       {/* Hero Section */}
       <section 
-        className="py-20 text-white relative"
+        className="py-20 text-white relative overflow-x-hidden"
         style={{
           backgroundImage: `url(/assets/ai-generated-8685407_1280.jpg)`,
           backgroundSize: 'cover',
@@ -97,10 +97,10 @@ const Products = () => {
         }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Solar Solutions</h1>
+        <div className="container mx-auto px-4 text-center relative z-10 max-w-full overflow-x-hidden">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Professional Signage Solutions</h1>
           <p className="text-lg sm:text-xl max-w-3xl mx-auto opacity-90 px-2">
-            Premium solar packages designed for homes and businesses. Quality equipment, professional installation, and excellent value.
+            Custom signage packages designed for businesses. Professional design, quality materials, council compliance, and nationwide installation.
           </p>
         </div>
       </section>
@@ -137,12 +137,12 @@ const Products = () => {
       </section>
 
       {/* Packages Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="py-20 overflow-x-hidden">
+        <div className="container mx-auto px-4 max-w-full">
           <div className="text-center mb-16 px-4">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Solar Packages</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Signage Packages</h2>
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Choose the perfect solution for your energy needs
+              Choose the perfect signage solution for your business needs
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
@@ -202,28 +202,28 @@ const Products = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">What's Included</h2>
-            <p className="text-xl text-muted-foreground">Every package includes premium features</p>
+            <p className="text-xl text-muted-foreground">Every package includes professional features</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             <div className="text-center p-6">
-              <div className="text-4xl mb-3">🔧</div>
-              <h3 className="font-semibold mb-2">Professional Installation</h3>
-              <p className="text-sm text-muted-foreground">Certified experts handle everything</p>
+              <div className="text-4xl mb-3">🎨</div>
+              <h3 className="font-semibold mb-2">Custom Design</h3>
+              <p className="text-sm text-muted-foreground">Professional design by qualified architects</p>
             </div>
             <div className="text-center p-6">
-              <div className="text-4xl mb-3">⚡</div>
-              <h3 className="font-semibold mb-2">Premium Equipment</h3>
-              <p className="text-sm text-muted-foreground">Top-tier panels and inverters</p>
+              <div className="text-4xl mb-3">🏛️</div>
+              <h3 className="font-semibold mb-2">Council Compliance</h3>
+              <p className="text-sm text-muted-foreground">All applications handled professionally</p>
             </div>
             <div className="text-center p-6">
-              <div className="text-4xl mb-3">📱</div>
-              <h3 className="font-semibold mb-2">Smart Monitoring</h3>
-              <p className="text-sm text-muted-foreground">Track performance on your phone</p>
+              <div className="text-4xl mb-3">🚚</div>
+              <h3 className="font-semibold mb-2">Nationwide Installation</h3>
+              <p className="text-sm text-muted-foreground">Professional installation anywhere in SA</p>
             </div>
             <div className="text-center p-6">
               <div className="text-4xl mb-3">🛡️</div>
-              <h3 className="font-semibold mb-2">Warranty Coverage</h3>
-              <p className="text-sm text-muted-foreground">Long-term protection included</p>
+              <h3 className="font-semibold mb-2">Quality Guarantee</h3>
+              <p className="text-sm text-muted-foreground">17 years experience with warranty</p>
             </div>
           </div>
         </div>
@@ -233,13 +233,13 @@ const Products = () => {
       <section className="py-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Not Sure Which Package?
+            Not Sure Which Signage Package?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Our energy consultants will help you choose the perfect solution for your needs and budget.
+            Our signage specialists will help you choose the perfect solution for your business needs and budget.
           </p>
-          <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-            <Link to="/quote">Request Free Consultation</Link>
+          <Button asChild size="lg" className="bg-gradient-to-r from-red-600 to-primary hover:from-red-700 hover:to-primary/90 transition-all duration-300 shadow-lg hover:shadow-red-600/25">
+            <Link to="/quote">Request Free Signage Consultation</Link>
           </Button>
         </div>
       </section>

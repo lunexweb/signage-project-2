@@ -9,7 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, Phone } from "lucide-react";
 import { toast } from "sonner";
 import Layout from "@/components/Layout";
 
@@ -76,7 +76,7 @@ const Quote = () => {
     <Layout>
       {/* Hero Section */}
       <section 
-        className="py-20 text-white relative"
+        className="py-20 text-white relative overflow-x-hidden"
         style={{
           backgroundImage: `url(/assets/pexels-pnw-prod-8276364.jpg)`,
           backgroundSize: 'cover',
@@ -85,11 +85,17 @@ const Quote = () => {
         }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
-        <div className="container mx-auto px-4 text-center relative z-10">
+        <div className="container mx-auto px-4 text-center relative z-10 max-w-full overflow-x-hidden">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Get Your Free Quote</h1>
-          <p className="text-lg sm:text-xl max-w-3xl mx-auto opacity-90 px-2">
-            Fill out the form below and our experts will create a customized solar solution for your needs.
+          <p className="text-lg sm:text-xl max-w-3xl mx-auto opacity-90 px-2 mb-6">
+            Fill out the form below and our experts will create a customized signage solution for your needs.
           </p>
+          <div className="flex items-center justify-center gap-2 text-white/90">
+            <Phone className="h-5 w-5" />
+            <a href="tel:+27725679274" className="text-lg font-semibold hover:text-red-400 transition-colors">
+              +27 72 567 9274
+            </a>
+          </div>
         </div>
       </section>
 
@@ -312,8 +318,8 @@ const Quote = () => {
                     Our team is ready to answer your questions
                   </p>
                   <div className="space-y-2 text-sm">
-                    <p>📞 +27 123 456 789</p>
-                    <p>📧 info@modishane.co.za</p>
+                    <p>📞 +27 72 567 9274</p>
+                    <p>📧 info@greatsigns.co.za</p>
                   </div>
                 </CardContent>
               </Card>

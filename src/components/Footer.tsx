@@ -3,25 +3,29 @@ import { Sun, Mail, Phone, MapPin, Facebook, Instagram, Linkedin } from "lucide-
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary text-secondary-foreground">
-      <div className="container mx-auto px-4 py-12">
+    <footer className="bg-secondary text-secondary-foreground overflow-x-hidden">
+      <div className="container mx-auto px-4 py-12 max-w-full">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
             <div className="space-y-2">
               <div className="flex items-center gap-2">
-                <img 
-                  src="/logo.jpg" 
-                  alt="SOLARQUENCH Logo" 
-                  className="h-8 w-8 rounded-lg"
-                />
-                <span className="text-2xl font-bold">SOLARQUENCH</span>
+                <div className="flex flex-col items-start">
+                  <div className="flex items-baseline gap-1">
+                    <span className="text-xl font-bold" style={{ color: '#431FD5' }}>
+                      Great
+                    </span>
+                    <span className="text-xl font-bold" style={{ color: '#431FD5' }}>
+                      Signs
+                    </span>
+                  </div>
+                  <span className="text-[10px] text-secondary-foreground/70 font-medium tracking-wide uppercase">
+                    PROFESSIONAL SIGNAGE SOLUTIONS
+                  </span>
+                </div>
               </div>
-              <p className="text-sm text-secondary-foreground/80 font-medium">
-                POWERING TOMORROW, TODAY
-              </p>
               <p className="text-sm text-secondary-foreground/80">
-                Leading solar energy solutions for a sustainable future. Quality installations and exceptional service.
+                Professional signage company with 17 years experience. Qualified team, council applications, and nationwide installation services.
               </p>
             </div>
           </div>
@@ -31,22 +35,22 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-sm hover:text-primary transition-colors">
+                <Link to="/" className="text-sm hover:text-red-500 transition-colors font-medium">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-sm hover:text-primary transition-colors">
+                <Link to="/about" className="text-sm hover:text-red-500 transition-colors font-medium">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/products" className="text-sm hover:text-primary transition-colors">
+                <Link to="/products" className="text-sm hover:text-red-500 transition-colors font-medium">
                   Products
                 </Link>
               </li>
               <li>
-                <Link to="/gallery" className="text-sm hover:text-primary transition-colors">
+                <Link to="/gallery" className="text-sm hover:text-red-500 transition-colors font-medium">
                   Gallery
                 </Link>
               </li>
@@ -57,10 +61,10 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Services</h3>
             <ul className="space-y-2 text-sm text-secondary-foreground/80">
-              <li>Solar Panel Installation</li>
-              <li>Energy Consultation</li>
-              <li>System Maintenance</li>
-              <li>Battery Storage</li>
+              <li>Custom Signage Design</li>
+              <li>Council Applications</li>
+              <li>Professional Installation</li>
+              <li>Nationwide Service</li>
             </ul>
           </div>
 
@@ -70,15 +74,15 @@ const Footer = () => {
             <ul className="space-y-3">
                     <li className="flex items-start gap-2 text-sm">
                       <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                      <span>+27 78 635 9549</span>
+                      <span>031-3056730</span>
+                    </li>
+                    <li className="flex items-start gap-2 text-sm">
+                      <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                      <span>082-559 7067</span>
                     </li>
               <li className="flex items-start gap-2 text-sm">
-                <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>info@SOLARQUENCH.co.za</span>
-              </li>
-              <li className="flex items-start gap-2 text-sm">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>South Africa</span>
+                <span>63 Umbilo Rd, Durban</span>
               </li>
             </ul>
 
@@ -98,9 +102,9 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-secondary-foreground/20 mt-8 pt-8 text-center text-sm text-secondary-foreground/60">
-          <p>© {new Date().getFullYear()} SOLARQUENCH. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Great Signs. All rights reserved.</p>
           <p className="mt-2">
-            Professional solar energy solutions for South Africa
+            Professional signage solutions for South Africa
           </p>
           <p className="mt-2">
             Built by{" "}
@@ -108,7 +112,7 @@ const Footer = () => {
               href="https://www.lunexweb.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="font-bold text-orange-500 hover:text-orange-600 transition-colors"
+              className="font-bold text-blue-500 hover:text-blue-600 transition-colors"
             >
               Lunexweb
             </a>

@@ -1,8 +1,8 @@
 import { MessageCircle } from "lucide-react";
 
 const WhatsAppButton = () => {
-  const phoneNumber = "27786359549"; // +27 78 635 9549 without spaces and +
-  const message = encodeURIComponent("Hi! I'm interested in learning more about your solar energy solutions.");
+  const phoneNumber = "27725679274"; // +27 72 567 9274 without spaces and +
+  const message = encodeURIComponent("Hi! I'm interested in your professional signage solutions. Can you help me choose the right package for my business?");
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
   return (
@@ -10,7 +10,7 @@ const WhatsAppButton = () => {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out hover:scale-110 group"
+      className="fixed bottom-6 right-4 z-50 bg-green-500 hover:bg-green-600 text-white p-3 sm:p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out hover:scale-110 group max-w-fit"
       aria-label="Contact us on WhatsApp"
     >
       <MessageCircle className="h-6 w-6" />

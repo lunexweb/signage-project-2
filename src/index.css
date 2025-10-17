@@ -17,8 +17,8 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 210 20% 15%;
 
-    /* Solar orange - energetic and warm */
-    --primary: 16 100% 60%;
+    /* Solar blue - energetic and professional */
+    --primary: 255 75% 50%;
     --primary-foreground: 0 0% 100%;
     
     /* Deep blue - trust and reliability */
@@ -28,8 +28,8 @@ All colors MUST be HSL.
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    /* Eco green - sustainability */
-    --accent: 88 55% 53%;
+    /* Professional blue - trust and reliability */
+    --accent: 255 75% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -37,16 +37,25 @@ All colors MUST be HSL.
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 16 100% 60%;
+    --ring: 255 75% 50%;
 
     --radius: 0.75rem;
     
     /* Custom design tokens */
-    --solar-gradient: linear-gradient(135deg, hsl(45 100% 60%), hsl(16 100% 60%));
+    --solar-gradient: linear-gradient(135deg, hsl(255 75% 50%), hsl(255 75% 50%));
     --sky-gradient: linear-gradient(180deg, hsl(197 65% 24%), hsl(203 89% 53%));
-    --hero-gradient: linear-gradient(135deg, hsl(197 65% 24%) 0%, hsl(16 100% 60%) 100%);
+    --hero-gradient: linear-gradient(135deg, hsl(197 65% 24%) 0%, hsl(255 75% 50%) 100%);
+    --red-accent: 0 84% 60%;
+    --red-accent-light: 0 84% 70%;
+    --red-accent-dark: 0 84% 50%;
+    --red-prominent: 0 84% 55%;
+    --red-hero: 0 84% 45%;
+    --warm-gradient: linear-gradient(135deg, hsl(0 84% 60%) 0%, hsl(255 75% 50%) 100%);
+    --red-dominant-gradient: linear-gradient(135deg, hsl(0 84% 45%) 0%, hsl(0 84% 60%) 50%, hsl(255 75% 50%) 100%);
     --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    --card-shadow-hover: 0 8px 30px rgba(255, 107, 53, 0.15);
+    --card-shadow-hover: 0 8px 30px rgba(67, 31, 213, 0.15);
+    --red-shadow: 0 8px 30px rgba(220, 38, 38, 0.25);
+    --red-shadow-strong: 0 12px 40px rgba(220, 38, 38, 0.35);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
@@ -76,7 +85,7 @@ All colors MUST be HSL.
     --popover: 210 25% 12%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 16 100% 60%;
+    --primary: 255 75% 50%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 197 65% 24%;
@@ -85,7 +94,7 @@ All colors MUST be HSL.
     --muted: 210 25% 18%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 88 55% 53%;
+    --accent: 255 75% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 50.6%;
@@ -93,10 +102,10 @@ All colors MUST be HSL.
 
     --border: 210 25% 18%;
     --input: 210 25% 18%;
-    --ring: 16 100% 60%;
+    --ring: 255 75% 50%;
     
     --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    --card-shadow-hover: 0 8px 30px rgba(255, 107, 53, 0.25);
+    --card-shadow-hover: 0 8px 30px rgba(67, 31, 213, 0.25);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -115,5 +124,35 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Prevent horizontal scrolling on mobile */
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  /* Ensure all containers respect viewport width */
+  .container {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  /* Fix for any elements that might cause horizontal scroll */
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Prevent images from overflowing */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Fix for long text that might overflow */
+  p, span, div {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }
