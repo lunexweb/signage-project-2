@@ -52,7 +52,7 @@ const Home = () => {
         <div className="container mx-auto px-4 relative z-10 text-center max-w-full overflow-x-hidden">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 text-white">
             Professional Signage Solutions with
-            <span className="block mt-2 bg-gradient-to-r from-red-600 via-red-500 to-primary bg-clip-text text-transparent">
+            <span className="block mt-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Great Signs
             </span>
           </h1>
@@ -76,7 +76,7 @@ const Home = () => {
           </div>
           <div className="flex items-center justify-center gap-2 mt-6 text-white/90">
             <Phone className="h-5 w-5" />
-            <a href="tel:+27725679274" className="text-lg font-semibold hover:text-red-400 transition-colors">
+            <a href="tel:+27725679274" className="text-lg font-semibold hover:text-primary transition-colors">
               +27 72 567 9274
             </a>
           </div>
@@ -102,7 +102,7 @@ const Home = () => {
                   style={{ boxShadow: "var(--card-shadow)" }}
                 >
                   <CardContent className="p-6 text-center">
-                    <div className="bg-gradient-to-br from-red-600 via-red-500 to-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 hover:shadow-red-600/30 hover:scale-110 transition-all duration-300">
+                    <div className="bg-gradient-to-br from-primary to-accent rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 hover:shadow-primary/30 hover:scale-110 transition-all duration-300">
                       <Icon className="h-8 w-8 text-white" />
                     </div>
                     <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
@@ -138,7 +138,7 @@ const Home = () => {
               <ul className="space-y-4">
                 {benefits.map((benefit, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <CheckCircle className="h-6 w-6 text-red-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
                     <span className="text-base sm:text-lg">{benefit}</span>
                   </li>
                 ))}
@@ -163,7 +163,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-red-700 via-red-600 to-primary text-white">
+      <section className="py-20 bg-gradient-to-r from-primary to-accent text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready for Professional Signage?

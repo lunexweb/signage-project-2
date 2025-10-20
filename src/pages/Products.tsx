@@ -238,7 +238,7 @@ const Products = () => {
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Our signage specialists will help you choose the perfect solution for your business needs and budget.
           </p>
-          <Button asChild size="lg" className="bg-gradient-to-r from-red-600 to-primary hover:from-red-700 hover:to-primary/90 transition-all duration-300 shadow-lg hover:shadow-red-600/25">
+          <Button asChild size="lg" className="bg-primary hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/25">
             <Link to="/quote">Request Free Signage Consultation</Link>
           </Button>
         </div>

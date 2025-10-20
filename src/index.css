@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 210 20% 15%;
 
-    /* Solar blue - energetic and professional */
+    /* Professional blue - #431FD5 */
     --primary: 255 75% 50%;
     --primary-foreground: 0 0% 100%;
     
@@ -45,17 +45,10 @@ All colors MUST be HSL.
     --solar-gradient: linear-gradient(135deg, hsl(255 75% 50%), hsl(255 75% 50%));
     --sky-gradient: linear-gradient(180deg, hsl(197 65% 24%), hsl(203 89% 53%));
     --hero-gradient: linear-gradient(135deg, hsl(197 65% 24%) 0%, hsl(255 75% 50%) 100%);
-    --red-accent: 0 84% 60%;
-    --red-accent-light: 0 84% 70%;
-    --red-accent-dark: 0 84% 50%;
-    --red-prominent: 0 84% 55%;
-    --red-hero: 0 84% 45%;
-    --warm-gradient: linear-gradient(135deg, hsl(0 84% 60%) 0%, hsl(255 75% 50%) 100%);
-    --red-dominant-gradient: linear-gradient(135deg, hsl(0 84% 45%) 0%, hsl(0 84% 60%) 50%, hsl(255 75% 50%) 100%);
     --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     --card-shadow-hover: 0 8px 30px rgba(67, 31, 213, 0.15);
-    --red-shadow: 0 8px 30px rgba(220, 38, 38, 0.25);
-    --red-shadow-strong: 0 12px 40px rgba(220, 38, 38, 0.35);
+    --primary-shadow: 0 8px 30px rgba(67, 31, 213, 0.25);
+    --primary-shadow-strong: 0 12px 40px rgba(67, 31, 213, 0.35);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;

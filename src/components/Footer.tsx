@@ -9,21 +9,15 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="space-y-2">
-              <div className="flex items-center gap-2">
-                <div className="flex flex-col items-start">
-                  <div className="flex items-baseline gap-1">
-                    <span className="text-xl font-bold" style={{ color: '#431FD5' }}>
-                      Great
-                    </span>
-                    <span className="text-xl font-bold" style={{ color: '#431FD5' }}>
-                      Signs
-                    </span>
-                  </div>
-                  <span className="text-[10px] text-secondary-foreground/70 font-medium tracking-wide uppercase">
-                    PROFESSIONAL SIGNAGE SOLUTIONS
-                  </span>
+              <Link to="/" className="flex items-center gap-3 group hover:opacity-80 transition-opacity">
+                <div className="text-2xl sm:text-3xl font-bold text-white" style={{ 
+                  fontFamily: 'Inter, system-ui, -apple-system, sans-serif',
+                  fontWeight: '800',
+                  letterSpacing: '-0.02em'
+                }}>
+                  Great Signs
                 </div>
-              </div>
+              </Link>
               <p className="text-sm text-secondary-foreground/80">
                 Professional signage company with 17 years experience. Qualified team, council applications, and nationwide installation services.
               </p>
@@ -35,22 +29,22 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-sm hover:text-red-500 transition-colors font-medium">
+                <Link to="/" className="text-sm hover:text-primary transition-colors font-medium">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-sm hover:text-red-500 transition-colors font-medium">
+                <Link to="/about" className="text-sm hover:text-primary transition-colors font-medium">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/products" className="text-sm hover:text-red-500 transition-colors font-medium">
+                <Link to="/products" className="text-sm hover:text-primary transition-colors font-medium">
                   Products
                 </Link>
               </li>
               <li>
-                <Link to="/gallery" className="text-sm hover:text-red-500 transition-colors font-medium">
+                <Link to="/gallery" className="text-sm hover:text-primary transition-colors font-medium">
                   Gallery
                 </Link>
               </li>

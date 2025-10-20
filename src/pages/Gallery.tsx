@@ -177,7 +177,7 @@ const Gallery = () => {
           </p>
           <div className="flex items-center justify-center gap-2 text-white/90">
             <Phone className="h-5 w-5" />
-            <a href="tel:+27725679274" className="text-lg font-semibold hover:text-red-400 transition-colors">
+            <a href="tel:+27725679274" className="text-lg font-semibold hover:text-primary transition-colors">
               +27 72 567 9274
             </a>
           </div>

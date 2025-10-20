@@ -23,18 +23,19 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="flex flex-col items-start">
-              <div className="flex items-baseline gap-1">
-                <span className="text-lg font-bold" style={{ color: '#431FD5' }}>
-                  Great
-                </span>
-                <span className="text-lg font-bold" style={{ color: '#431FD5' }}>
-                  Signs
-                </span>
-              </div>
-              <span className="text-[10px] text-muted-foreground font-medium tracking-wide uppercase">
-                PROFESSIONAL SIGNAGE SOLUTIONS
-              </span>
+            <img 
+              src="https://res.cloudinary.com/doqsolr8d/image/upload/v1760945606/WhatsApp_Image_2025-10-20_at_08.14.42_nj47uh.jpg"
+              alt="Great Signs Logo"
+              className="h-12 w-auto sm:h-14 md:h-16 object-contain"
+            />
+            {/* Desktop text logo - hidden on mobile */}
+            <div className="hidden sm:block text-2xl md:text-3xl font-bold" style={{ 
+              color: '#431FD5',
+              fontFamily: 'Inter, system-ui, -apple-system, sans-serif',
+              fontWeight: '800',
+              letterSpacing: '-0.02em'
+            }}>
+              Great Signs
             </div>
           </Link>
 
@@ -51,7 +52,7 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <Button asChild size="lg" className="bg-gradient-to-r from-red-600 to-primary hover:from-red-700 hover:to-primary/90 transition-all duration-300 shadow-lg hover:shadow-red-600/25">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/25">
               <Link to="/quote">Get a Quote</Link>
             </Button>
           </div>
@@ -85,7 +86,7 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <Button asChild size="lg" className="w-full bg-gradient-to-r from-red-600 to-primary hover:from-red-700 hover:to-primary/90 transition-all duration-300 shadow-lg hover:shadow-red-600/25">
+            <Button asChild size="lg" className="w-full bg-primary hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/25">
               <Link to="/quote" onClick={() => setIsOpen(false)}>
                 Get a Quote
               </Link>
